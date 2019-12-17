@@ -25,15 +25,13 @@
   </div>
 </template>
 <script>
-import NProgress from 'nprogress';
-
 export default {
   props: {
     event: {
       type: Object,
       required: true
     }
-  },
+  }
 }
 </script>
 <style scoped>
