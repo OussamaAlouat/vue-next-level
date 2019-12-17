@@ -231,6 +231,24 @@
       "date": "",
       "time": "5:00",
       "attendees": []
+    },
+    {
+      "id": 5794162,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "title": "wellcome",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
     }
   ]
 }
