@@ -81,8 +81,8 @@
         <datepicker 
           v-model="event.date"
           placeholder="Select a date"
-          :class="{ error: $v.event.location.$error }"
-          @opened="$v.event.location.$touch()"
+          :class="{ error: $v.event.date.$error }"
+          @opened="$v.event.date.$touch()"
         />
       </div>
       <template v-if="$v.event.date.$error">
@@ -159,7 +159,7 @@ export default {
   methods: {
     createEvent() {
       NProgress.start()
-      this.$v.touch()
+      this.$v.$touch()
       if (!this.$v.$invalid) {
         this.$store
           .dispatch('event/createEvent', this.event)
