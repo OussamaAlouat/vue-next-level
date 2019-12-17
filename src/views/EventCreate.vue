@@ -58,16 +58,10 @@
 <script>
 import Datepicker from 'vuejs-datepicker'
 import NProgress from 'nprogress'
-import BaseInput from '@/components/BaseInput.vue'
-import BaseSelect from '@/components/BaseSelect.vue'
-import BaseButton from '@/components/BaseButton.vue'
 
 export default {
   components: {
-    Datepicker,
-    BaseInput,
-    BaseSelect,
-    BaseButton
+    Datepicker
   },
   data() {
     const times = []
