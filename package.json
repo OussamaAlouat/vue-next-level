@@ -1,6 +1,6 @@
 {
-  "name": "real-world-vue",
   "version": "0.1.0",
+  "name": "vue-next-level",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
