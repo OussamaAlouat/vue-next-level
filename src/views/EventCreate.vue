@@ -2,10 +2,11 @@
   <div>
     <h1>Create an Event</h1>
     <form @submit.prevent="createEvent">
-      <label>Select a category</label>
-      <select v-model="event.category">
-        <option v-for="cat in categories" :key="cat">{{ cat }}</option>
-      </select>
+      <base-select
+        v-model="event.category"
+        :options="categories"
+        label="Select a category"
+      />
 
       <h3>Name & describe your event</h3>
 
@@ -41,12 +42,12 @@
         <datepicker v-model="event.date" placeholder="Select a date"/>
       </div>
 
-      <div class="field">
-        <label>Select a time</label>
-        <select v-model="event.time">
-          <option v-for="time in times" :key="time">{{ time }}</option>
-        </select>
-      </div>
+      <base-select
+        v-model="event.time"
+        :options="times"
+        label="Select a time"
+        class="field"
+      />
 
       <input type="submit" class="button -fill-gradient" value="Submit"/>
     </form>
@@ -58,11 +59,13 @@
 import Datepicker from 'vuejs-datepicker'
 import NProgress from 'nprogress'
 import BaseInput from '@/components/BaseInput.vue'
+import BaseSelect from '@/components/BaseSelect.vue'
 
 export default {
   components: {
     Datepicker,
-    BaseInput
+    BaseInput,
+    BaseSelect
   },
   data() {
     const times = []
