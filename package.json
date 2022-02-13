@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.21.2",
+    "eslint": "^6.7.2",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
     "vue": "^2.5.17",
@@ -21,9 +22,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0",
-    "@vue/cli-plugin-eslint": "^3.0.0",
-    "@vue/cli-service": "^3.0.0",
+    "@vue/cli-plugin-babel": "^4.5.15",
+    "@vue/cli-plugin-eslint": "^4.5.15",
+    "@vue/cli-service": "^4.5.15",
     "@vue/eslint-config-prettier": "^3.0.0",
     "vue-template-compiler": "^2.5.17"
   }
